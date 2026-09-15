@@ -90,7 +90,7 @@ class _MeditateScreenState extends State<MeditateScreen> {
               children: [
                 Expanded(
                   child: _GridCard(
-                    art: SleepHourArt(),
+                    art: FigmaImage('assets/images/sleep_hour.png'),
                     title: 'The Sleep Hour',
                     author: 'Ashna Mukherjee',
                     meta: '3 Sessions',
@@ -99,7 +99,7 @@ class _MeditateScreenState extends State<MeditateScreen> {
                 SizedBox(width: 14),
                 Expanded(
                   child: _GridCard(
-                    art: EasyMissionArt(),
+                    art: FigmaImage('assets/images/easy_mission.png'),
                     title: 'Easy on the Mission',
                     author: 'Peter Mach',
                     meta: '5 minutes',
@@ -113,7 +113,7 @@ class _MeditateScreenState extends State<MeditateScreen> {
               children: [
                 Expanded(
                   child: _GridCard(
-                    art: RelaxWithMeArt(),
+                    art: FigmaImage('assets/images/relax_with_me.png'),
                     title: 'Relax with Me',
                     author: 'Amanda James',
                     meta: '3 Sessions',
@@ -122,7 +122,7 @@ class _MeditateScreenState extends State<MeditateScreen> {
                 SizedBox(width: 14),
                 Expanded(
                   child: _GridCard(
-                    art: SunEnergyArt(),
+                    art: FigmaImage('assets/images/sun_energy.png'),
                     title: 'Sun and Energy',
                     author: 'Micheal Hiu',
                     meta: '5 minutes',

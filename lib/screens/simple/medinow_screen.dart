@@ -56,19 +56,12 @@ class MedinowScreen extends StatelessWidget {
                 ),
               ),
               const Spacer(flex: 2),
-              SizedBox(
+              const SizedBox(
                 height: 250,
-                child: Stack(
-                  alignment: Alignment.bottomCenter,
-                  children: [
-                    const Positioned(left: 8, bottom: 20, child: LeafPlant()),
-                    const Positioned(
-                      right: 4,
-                      bottom: 28,
-                      child: LeafPlant(flip: true, color: Color(0xFF8FE0DC)),
-                    ),
-                    const MeditatingPerson(),
-                  ],
+                child: FigmaImage(
+                  'assets/images/medinow.png',
+                  fit: BoxFit.contain,
+                  radius: 0,
                 ),
               ),
               const SizedBox(height: 12),

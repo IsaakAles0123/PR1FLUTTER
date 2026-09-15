@@ -16,7 +16,13 @@ class AtlantisScreen extends StatelessWidget {
             child: Stack(
               clipBehavior: Clip.none,
               children: [
-                const Positioned.fill(child: AtlantisHeaderArt()),
+                const Positioned.fill(
+                  child: FigmaImage(
+                    'assets/images/atlantis.png',
+                    radius: 0,
+                    alignment: Alignment.centerLeft,
+                  ),
+                ),
                 Positioned(
                   top: MediaQuery.paddingOf(context).top + 8,
                   left: 16,

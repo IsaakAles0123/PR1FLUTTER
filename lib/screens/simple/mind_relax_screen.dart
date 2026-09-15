@@ -13,9 +13,9 @@ class MindRelaxScreen extends StatelessWidget {
         child: ListView(
           padding: const EdgeInsets.fromLTRB(20, 12, 20, 24),
           children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(20),
-              child: const SizedBox(height: 210, child: CliffScene()),
+            const SizedBox(
+              height: 210,
+              child: FigmaImage('assets/images/mind_relax.png', radius: 20),
             ),
             const SizedBox(height: 22),
             const Text(

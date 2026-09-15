@@ -52,7 +52,14 @@ void main() {
   Future<void> shot(WidgetTester tester, Widget screen, String name) async {
     await tester.binding.setSurfaceSize(const Size(390, 844));
     await tester.pumpWidget(wrap(screen));
-    await tester.pumpAndSettle();
+    await tester.runAsync(() async {
+      for (final element in find.byType(Image).evaluate()) {
+        final image = element.widget as Image;
+        await precacheImage(image.image, element);
+      }
+    });
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 300));
     await expectLater(find.byType(MaterialApp), matchesGoldenFile('goldens/$name.png'));
   }
 
