@@ -23,6 +23,9 @@ flutter run
 На главном экране две вкладки: «Простые макеты» и «Сложные макеты».
 Нажмите карточку, чтобы открыть экран.
 
-## Макет Figma
+## Репозиторий
+
+https://github.com/IsaakAles0123/PR1FLUTTER
+
 
 https://www.figma.com/design/neJsVnKChShgyFs39ECHf5/Untitled?node-id=1-1229
